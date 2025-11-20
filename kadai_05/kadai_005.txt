@@ -1,0 +1,55 @@
+misako@MIsaMacBook-Air git_tutorial % mkdir git_challenge
+cd git_challenge
+git init
+
+Initialized empty Git repository in /Users/misako/samurai/git/git_tutorial/git_challenge/.git/
+misako@MIsaMacBook-Air git_challenge % echo "Hello, world!" > hello_world.txt
+
+dquote> 
+misako@MIsaMacBook-Air git_challenge % echo Hello,world! > hello_world.txt
+misako@MIsaMacBook-Air git_challenge % git add hello_world.txt
+misako@MIsaMacBook-Air git_challenge % git commit -m "1st commit: add Hello, world!"
+dquote> 
+misako@MIsaMacBook-Air git_challenge % git commit -m 1st commit: add Hello, world!  
+
+error: pathspec 'commit:' did not match any file(s) known to git
+error: pathspec 'add' did not match any file(s) known to git
+error: pathspec 'Hello,' did not match any file(s) known to git
+error: pathspec 'world!' did not match any file(s) known to git
+misako@MIsaMacBook-Air git_challenge % git commit -m "1st commit: add Hello, world!"
+
+dquote> 
+misako@MIsaMacBook-Air git_challenge % 
+misako@MIsaMacBook-Air git_challenge % 
+misako@MIsaMacBook-Air git_challenge % git commit -m "1st commit: add Hello, world!"
+
+dquote> 
+misako@MIsaMacBook-Air git_challenge % misako@MIsaMacBook-Air git_challenge % git commit -m "1st commit: add Hello, world!"
+
+dquote>
+dquote> 
+misako@MIsaMacBook-Air git_challenge % misako@MIsaMacBook-Air git_challenge % git commit -m "1st commit: add Hello, world"
+
+dquote>
+zsh: parse error near `\n'
+misako@MIsaMacBook-Air git_challenge % git commit -m '1st commit: add Hello, world'
+
+[main (root-commit) 01343b1] 1st commit: add Hello, world
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+misako@MIsaMacBook-Air git_challenge % echo "こんにちは、世界！" >> hello_world.txt
+git add hello_world.txt
+git commit -m '2nd commit: add Japanese greeting'
+
+[main bc7d5f5] 2nd commit: add Japanese greeting
+ 1 file changed, 1 insertion(+)
+misako@MIsaMacBook-Air git_challenge % git log --oneline
+
+bc7d5f5 (HEAD -> main) 2nd commit: add Japanese greeting
+01343b1 1st commit: add Hello, world
+misako@MIsaMacBook-Air git_challenge % 
+misako@MIsaMacBook-Air git_challenge % 
+misako@MIsaMacBook-Air git_challenge % cd ..
+misako@MIsaMacBook-Air git_tutorial % mkdir kadai_05
+misako@MIsaMacBook-Air git_tutorial % cd kadai_05      
+misako@MIsaMacBook-Air kadai_05 % nano kadai_005.txt
